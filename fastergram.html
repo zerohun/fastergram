@@ -1,0 +1,14 @@
+<head>
+  <title>fastergram</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  <form id="file-form" class="file-form">
+    <input type="file" class="file" name="file">
+  </form>
+  {{#each images}}
+    <img width="600" src="{{this.url store='images'}}">
+  {{/each}}
+
+</body>
